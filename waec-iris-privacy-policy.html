@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — WAEC IRIS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #f4f1ec;
+      --surface: #ffffff;
+      --ink: #181410;
+      --ink-muted: #5c5650;
+      --accent: #1a3a6b;
+      --accent-deep: #102650;
+      --accent-warm: #b8860b;
+      --accent-light: #e6edf8;
+      --danger: #c0392b;
+      --danger-light: #fdf0ef;
+      --border: #ddd8cf;
+      --rule: #ccc6bb;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.78;
+    }
+    header {
+      background: var(--accent-deep);
+      padding: 60px 24px 44px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(-55deg, transparent, transparent 48px, rgba(255,255,255,0.025) 48px, rgba(255,255,255,0.025) 96px);
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent-warm), #e8a020, var(--accent-warm));
+    }
+    .app-logo {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      padding: 10px 20px 10px 12px;
+      margin-bottom: 28px;
+    }
+    .logo-mark {
+      width: 44px; height: 44px;
+      background: var(--accent-warm);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 18px; font-weight: 700;
+      color: #fff; letter-spacing: -0.02em;
+    }
+    .logo-text { text-align: left; }
+    .logo-text strong { display: block; color: #fff; font-size: 16px; font-weight: 600; letter-spacing: 0.08em; }
+    .logo-text span { display: block; font-size: 11px; color: rgba(255,255,255,0.5); letter-spacing: 0.04em; }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+      font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 10px;
+    }
+    header h1 em { color: var(--accent-warm); font-style: normal; }
+    header .tagline { font-size: 14px; color: rgba(255,255,255,0.55); letter-spacing: 0.04em; margin-bottom: 28px; }
+    .meta-chips { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 999px; padding: 5px 14px;
+      font-size: 12px; color: rgba(255,255,255,0.7);
+    }
+    .chip strong { color: rgba(255,255,255,0.9); font-weight: 500; }
+    .sensitivity-banner {
+      background: var(--danger-light);
+      border-left: 4px solid var(--danger);
+      padding: 20px 28px; font-size: 14px;
+      color: #6b1a14; line-height: 1.65;
+    }
+    .sensitivity-banner strong { color: var(--danger); }
+    .wrapper { max-width: 840px; margin: 0 auto; padding: 0 24px 80px; }
+    .intro-card {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 4px; padding: 22px 26px;
+      margin: 40px 0 16px; font-size: 15px;
+      color: #1a2e55; line-height: 1.7;
+    }
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px; padding: 26px 30px;
+      margin: 32px 0 56px;
+    }
+    .toc-title { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--ink-muted); margin-bottom: 16px; }
+    .toc ol { list-style: none; columns: 2; column-gap: 40px; }
+    @media (max-width: 560px) { .toc ol { columns: 1; } }
+    .toc li { margin-bottom: 7px; }
+    .toc a { font-size: 13.5px; color: var(--accent); text-decoration: none; font-weight: 500; display: flex; align-items: flex-start; gap: 8px; }
+    .toc a:hover { text-decoration: underline; }
+    .toc-n { color: var(--accent-warm); font-family: 'Playfair Display', serif; font-size: 11px; padding-top: 3px; flex-shrink: 0; }
+    section { margin-bottom: 54px; scroll-margin-top: 20px; }
+    .sh { display: flex; align-items: baseline; gap: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); margin-bottom: 22px; }
+    .sh-num { font-family: 'Playfair Display', serif; font-size: 26px; color: var(--accent-warm); line-height: 1; flex-shrink: 0; }
+    .sh h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.1rem, 2.8vw, 1.45rem); font-weight: 600; color: var(--accent); }
+    p { font-size: 15px; margin-bottom: 14px; color: #2a2218; }
+    p:last-child { margin-bottom: 0; }
+    .dt { width: 100%; border-collapse: collapse; font-size: 13.5px; margin: 18px 0; border-radius: 6px; border: 1px solid var(--border); overflow: hidden; }
+    .dt thead tr { background: var(--accent); color: #fff; }
+    .dt thead th { padding: 10px 14px; text-align: left; font-weight: 500; font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+    .dt tbody tr { border-bottom: 1px solid var(--border); }
+    .dt tbody tr:last-child { border-bottom: none; }
+    .dt tbody tr:nth-child(even) { background: #faf8f5; }
+    .dt td { padding: 10px 14px; vertical-align: top; line-height: 1.55; }
+    .dt td:first-child { font-weight: 500; color: var(--accent); }
+    ul.pl { list-style: none; margin: 12px 0 16px; }
+    ul.pl li { font-size: 15px; padding: 7px 0 7px 24px; position: relative; color: #2a2218; border-bottom: 1px dashed #e2ddd5; }
+    ul.pl li:last-child { border-bottom: none; }
+    ul.pl li::before { content: '▸'; position: absolute; left: 0; color: var(--accent-warm); font-size: 11px; top: 10px; }
+    .note { border-radius: 6px; padding: 16px 20px; margin: 16px 0; font-size: 14px; line-height: 1.65; }
+    .note-info { background: #e6edf8; border: 1px solid #b0c4e8; color: #1a2e55; }
+    .note-warn { background: #fff8e6; border: 1px solid #e8c86a; color: #5a3f00; }
+    .note-danger { background: var(--danger-light); border: 1px solid #e8a8a0; color: #6b1a14; }
+    .note strong { font-weight: 600; }
+    .rights-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; margin: 20px 0; }
+    .right-card { background: var(--surface); border: 1px solid var(--border); border-top: 3px solid var(--accent); border-radius: 6px; padding: 14px 16px; }
+    .right-card h4 { font-size: 12px; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 5px; }
+    .right-card p { font-size: 13px; color: var(--ink-muted); margin: 0; }
+    .user-types { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 20px 0; }
+    @media (max-width: 540px) { .user-types { grid-template-columns: 1fr; } }
+    .user-card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
+    .uc-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .uc-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+    .uc-icon.candidate { background: #e8f0fb; }
+    .uc-icon.school { background: #fef4e0; }
+    .user-card h4 { font-size: 14px; font-weight: 600; color: var(--accent); }
+    .user-card p { font-size: 13px; color: var(--ink-muted); margin: 0; }
+    .contact-card {
+      background: var(--accent-deep); color: #fff;
+      border-radius: 10px; padding: 32px 36px;
+      display: grid; grid-template-columns: auto 1fr;
+      gap: 24px; align-items: start;
+    }
+    @media (max-width: 500px) { .contact-card { grid-template-columns: 1fr; } }
+    .cc-icon { font-size: 40px; opacity: 0.45; padding-top: 4px; }
+    .contact-card h3 { font-family: 'Playfair Display', serif; font-size: 20px; margin-bottom: 4px; }
+    .contact-card .cc-sub { font-size: 13px; color: rgba(255,255,255,0.55); margin-bottom: 16px; }
+    .cc-line { font-size: 13.5px; color: rgba(255,255,255,0.75); margin-bottom: 6px; }
+    .cc-line a { color: #c8d8f5; text-decoration: none; font-weight: 500; }
+    .cc-line a:hover { text-decoration: underline; }
+    footer {
+      background: #0d1a2e; color: rgba(255,255,255,0.35);
+      text-align: center; padding: 22px 24px;
+      font-size: 12px; letter-spacing: 0.03em; line-height: 1.8;
+    }
+    footer strong { color: rgba(255,255,255,0.65); }
+    @media (max-width: 600px) { .wrapper { padding: 0 16px 60px; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="app-logo">
+    <div class="logo-mark">IR</div>
+    <div class="logo-text">
+      <strong>WAEC IRIS</strong>
+      <span>Irregularity Reporting &amp; Investigation System</span>
+    </div>
+  </div>
+  <h1>Privacy <em>Policy</em></h1>
+  <p class="tagline">West African Examinations Council — Ghana &nbsp;·&nbsp; irreg.waecgh.org</p>
+  <div class="meta-chips">
+    <span class="chip">📅 Effective: <strong>March 24, 2026</strong></span>
+    <span class="chip">🔄 Last Updated: <strong>March 24, 2026</strong></span>
+    <span class="chip">📍 Jurisdiction: <strong>Republic of Ghana</strong></span>
+    <span class="chip">📱 Platform: <strong>Android (Google Play)</strong></span>
+  </div>
+</header>
+
+<div class="sensitivity-banner">
+  <strong>⚠️ Sensitive Data Notice:</strong> WAEC IRIS handles information relating to examination irregularity and malpractice cases — including case statuses, candidate index numbers, and school identities. This data is treated with the highest level of confidentiality and is only accessible to authorized parties directly involved in a case.
+</div>
+
+<div class="wrapper">
+
+  <div class="intro-card">
+    <strong>About this document.</strong> This Privacy Policy governs the collection, processing, storage, and disclosure of personal data by the <strong>WAEC Irregularity Reporting &amp; Investigation System (WAEC IRIS)</strong> mobile application, developed and operated by the <strong>West African Examinations Council, Ghana (WAEC-GH)</strong>. By using the App, you acknowledge that you have read and understood this policy. This policy complies with Ghana's <strong>Data Protection Act, 2012 (Act 843)</strong> and Google Play Store's Data Safety requirements.
+  </div>
+
+  <div class="toc">
+    <p class="toc-title">Table of Contents</p>
+    <ol>
+      <li><a href="#s1"><span class="toc-n">01.</span> What WAEC IRIS Does</a></li>
+      <li><a href="#s2"><span class="toc-n">02.</span> Who Uses This App</a></li>
+      <li><a href="#s3"><span class="toc-n">03.</span> Information We Collect</a></li>
+      <li><a href="#s4"><span class="toc-n">04.</span> How We Use Your Information</a></li>
+      <li><a href="#s5"><span class="toc-n">05.</span> Legal Basis for Processing</a></li>
+      <li><a href="#s6"><span class="toc-n">06.</span> Sharing &amp; Disclosure</a></li>
+      <li><a href="#s7"><span class="toc-n">07.</span> Data Retention</a></li>
+      <li><a href="#s8"><span class="toc-n">08.</span> Data Security</a></li>
+      <li><a href="#s9"><span class="toc-n">09.</span> Your Rights &amp; Choices</a></li>
+      <li><a href="#s10"><span class="toc-n">10.</span> Children's Privacy</a></li>
+      <li><a href="#s11"><span class="toc-n">11.</span> Third-Party Services</a></li>
+      <li><a href="#s12"><span class="toc-n">12.</span> Changes to This Policy</a></li>
+      <li><a href="#s13"><span class="toc-n">13.</span> Contact &amp; Data Controller</a></li>
+    </ol>
+  </div>
+
+  <section id="s1">
+    <div class="sh"><span class="sh-num">01</span><h2>What WAEC IRIS Does</h2></div>
+    <p>WAEC IRIS (Irregularity Reporting &amp; Investigation System) is a secure digital platform that enables the transparent management of examination irregularity and malpractice cases conducted by the West African Examinations Council in Ghana. The App replaces paper-based processes with a centralized, real-time system for reporting, tracking, and resolving examination misconduct cases.</p>
+    <p>Core functions of the App include:</p>
+    <ul class="pl">
+      <li>Allowing <strong>candidates</strong> to check the real-time status of their examination malpractice case using their index number and date of birth</li>
+      <li>Allowing <strong>schools</strong> to log in and review malpractice case statuses for all their enrolled candidates</li>
+      <li>Providing <strong>advanced search and filtering</strong> of irregularity records for authorized school personnel</li>
+      <li>Delivering <strong>real-time dashboards and analytics</strong> to support evidence-based decision-making by WAEC officials and schools</li>
+      <li>Maintaining a <strong>complete and auditable record</strong> of all irregularity and malpractice proceedings</li>
+    </ul>
+    <div class="note note-info">
+      <strong>ℹ️ Scope:</strong> This Privacy Policy applies to the WAEC IRIS mobile application on Android (Google Play) and to the web platform at <strong>irreg.waecgh.org</strong>, which share the same backend data infrastructure.
+    </div>
+  </section>
+
+  <section id="s2">
+    <div class="sh"><span class="sh-num">02</span><h2>Who Uses This App</h2></div>
+    <p>WAEC IRIS serves two distinct categories of authorized users. Each has a different login method and a different level of data access:</p>
+    <div class="user-types">
+      <div class="user-card">
+        <div class="uc-header">
+          <div class="uc-icon candidate">🎓</div>
+          <h4>Candidates</h4>
+        </div>
+        <p>Individuals who have sat a WAEC examination and have an ongoing or resolved irregularity/malpractice case. Login requires a <strong>candidate index number</strong>, <strong>date of birth</strong>, and <strong>year of exam</strong>. Candidates can only view their own case status.</p>
+      </div>
+      <div class="user-card">
+        <div class="uc-header">
+          <div class="uc-icon school">🏫</div>
+          <h4>Schools</h4>
+        </div>
+        <p>Registered schools and their authorized personnel. Login uses <strong>Results Listing credentials</strong> (email and password). Schools may view irregularity case statuses for all candidates registered under their institution.</p>
+      </div>
+    </div>
+    <div class="note note-warn">
+      <strong>⚠️ Restricted Access:</strong> The App is not open to the general public. Only users with valid credentials directly tied to a WAEC examination sitting may access case information. Unauthorized access attempts are logged and may be referred to appropriate authorities.
+    </div>
+  </section>
+
+  <section id="s3">
+    <div class="sh"><span class="sh-num">03</span><h2>Information We Collect</h2></div>
+    <p>We collect only the data necessary to provide the App's services. The table below details all data collected, mapped to Google Play's Data Safety categories:</p>
+    <table class="dt">
+      <thead>
+        <tr><th>Data Category</th><th>Specific Data Elements</th><th>User Type</th><th>How Collected</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Candidate Identity</td>
+          <td>Index number, date of birth, exam year, full name</td>
+          <td>Candidate</td>
+          <td>Login entry / WAEC examination records</td>
+        </tr>
+        <tr>
+          <td>School Credentials</td>
+          <td>School email address, hashed password, school name, school code</td>
+          <td>School</td>
+          <td>Registration / Results Listing system</td>
+        </tr>
+        <tr>
+          <td>Case Information</td>
+          <td>Irregularity type, case status, date of offence, subject(s) involved, hearing outcomes</td>
+          <td>Both</td>
+          <td>WAEC investigation records (read-only to users)</td>
+        </tr>
+        <tr>
+          <td>Session &amp; Auth Data</td>
+          <td>Login timestamps, session tokens, failed login attempts</td>
+          <td>Both</td>
+          <td>Automatically recorded on login/logout</td>
+        </tr>
+        <tr>
+          <td>Device Information</td>
+          <td>Device model, OS version, IP address, App version</td>
+          <td>Both</td>
+          <td>Automatically collected on App launch</td>
+        </tr>
+        <tr>
+          <td>App Usage &amp; Diagnostics</td>
+          <td>Features accessed, page views, crash logs, error reports</td>
+          <td>Both</td>
+          <td>Automatically collected during use</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="note note-danger">
+      <strong>🔒 Sensitive Data Handling:</strong> Examination malpractice case records are classified as <strong>sensitive personal data</strong> under Ghana's Data Protection Act 2012 (Act 843). This data is never used for advertising, sold to third parties, or shared beyond the authorized scope described in this policy.
+    </div>
+    <p>We do <strong>not</strong> collect biometric data, financial account information, precise geolocation, health data, or social media profiles.</p>
+  </section>
+
+  <section id="s4">
+    <div class="sh"><span class="sh-num">04</span><h2>How We Use Your Information</h2></div>
+    <p>All data collected is used strictly for the purposes below. We apply the principle of <strong>purpose limitation</strong> — your data will not be processed for any purpose incompatible with why it was originally collected.</p>
+    <ul class="pl">
+      <li>To <strong>authenticate and authorize</strong> candidates and school users and grant appropriate access to case information</li>
+      <li>To <strong>display examination irregularity case statuses</strong> accurately and in real time to the authorized party</li>
+      <li>To <strong>enable schools</strong> to monitor malpractice cases affecting their registered candidates</li>
+      <li>To <strong>maintain an auditable access log</strong> for security and accountability purposes</li>
+      <li>To <strong>detect and prevent unauthorized access</strong>, fraud, and abuse of the case management system</li>
+      <li>To <strong>generate aggregate, anonymized statistics</strong> for WAEC-GH administration and policy decisions</li>
+      <li>To <strong>improve App performance</strong> through anonymized crash and usage analysis</li>
+      <li>To <strong>comply with legal and regulatory obligations</strong> applicable to WAEC as a statutory examination body in Ghana</li>
+    </ul>
+    <p>We do <strong>not</strong> use your personal data for advertising, commercial profiling, or any purpose unrelated to examination irregularity management. We do not sell your data.</p>
+  </section>
+
+  <section id="s5">
+    <div class="sh"><span class="sh-num">05</span><h2>Legal Basis for Processing</h2></div>
+    <p>Our processing of personal data is grounded in the following lawful bases under Ghana's Data Protection Act, 2012 (Act 843):</p>
+    <ul class="pl">
+      <li><strong>Consent:</strong> Candidates and school users consent to data processing by voluntarily logging into the App to access case information</li>
+      <li><strong>Contractual necessity:</strong> Processing is necessary to deliver the service requested — access to irregularity case records</li>
+      <li><strong>Public task &amp; statutory function:</strong> WAEC-GH is established by statute to regulate public examinations in Ghana, which includes managing irregularity and malpractice proceedings</li>
+      <li><strong>Legitimate interests:</strong> To protect the integrity of the examination system, secure accounts, and prevent unauthorized access to sensitive case records</li>
+      <li><strong>Legal obligation:</strong> To comply with orders from courts, law enforcement, the Data Protection Commission of Ghana, or other competent regulatory bodies</li>
+    </ul>
+  </section>
+
+  <section id="s6">
+    <div class="sh"><span class="sh-num">06</span><h2>Sharing &amp; Disclosure</h2></div>
+    <p>We do not share personal data with third parties except in the following limited and necessary circumstances:</p>
+    <ul class="pl">
+      <li><strong>Registered Schools:</strong> Schools may access malpractice case information for candidates registered under their school code — a core and disclosed function of the App</li>
+      <li><strong>WAEC Regional &amp; National Offices:</strong> Authorized WAEC officials may access case records for administrative and investigative purposes under WAEC's statutory mandate</li>
+      <li><strong>Legal &amp; Regulatory Authorities:</strong> Data may be disclosed to law enforcement, courts, or Ghana's Data Protection Commission where required by law or court order</li>
+      <li><strong>IT &amp; Infrastructure Providers:</strong> Trusted technical partners who host and maintain the App under strict data processing agreements, bound by confidentiality obligations</li>
+    </ul>
+    <div class="note note-info">
+      <strong>ℹ️ No Advertising or Commercial Transfers:</strong> Personal data processed through WAEC IRIS is never transferred to third parties for advertising, marketing, or commercial profiling purposes. Any international infrastructure transfers are subject to appropriate safeguards under Act 843.
+    </div>
+  </section>
+
+  <section id="s7">
+    <div class="sh"><span class="sh-num">07</span><h2>Data Retention</h2></div>
+    <p>Data is retained only as long as necessary to fulfil the purposes described in this policy and to meet WAEC-GH's legal and statutory obligations.</p>
+    <table class="dt">
+      <thead>
+        <tr><th>Data Type</th><th>Retention Period</th><th>Reason</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Examination Irregularity Case Records</td><td>Permanently retained</td><td>Statutory academic record; audit and appeals purposes</td></tr>
+        <tr><td>School Login Credentials</td><td>Duration of school's WAEC registration + 3 years</td><td>Access management and audit trail</td></tr>
+        <tr><td>Session &amp; Access Logs</td><td>24 months</td><td>Security monitoring and forensic audit</td></tr>
+        <tr><td>Device &amp; App Usage Data</td><td>12 months</td><td>App performance and improvement</td></tr>
+        <tr><td>Candidate Login Data</td><td>Duration of case + 5 years after resolution</td><td>Appeals, legal challenges, regulatory compliance</td></tr>
+      </tbody>
+    </table>
+    <p>Examination malpractice records cannot be deleted upon request, as they form part of the permanent official record maintained by WAEC-GH under its statutory mandate. All other personal data may be subject to deletion requests as described in Section 9.</p>
+  </section>
+
+  <section id="s8">
+    <div class="sh"><span class="sh-num">08</span><h2>Data Security</h2></div>
+    <p>Given the sensitivity of examination irregularity data, we apply robust technical and organizational security measures:</p>
+    <ul class="pl">
+      <li><strong>TLS/SSL encryption</strong> for all data in transit between the App and our servers</li>
+      <li><strong>AES-256 encryption</strong> for sensitive data stored at rest</li>
+      <li><strong>Hashed and salted passwords</strong> — school passwords are never stored in plaintext</li>
+      <li><strong>Multi-factor authentication inputs:</strong> Candidates must supply index number, date of birth, and exam year; schools use verified email credentials</li>
+      <li><strong>Role-based access control (RBAC)</strong> ensuring each user can only access data relevant to their role</li>
+      <li><strong>Automated session expiry</strong> to protect unattended accounts</li>
+      <li><strong>Access logging and anomaly detection</strong> to identify and flag suspicious login activity</li>
+      <li><strong>Regular security audits</strong> and vulnerability assessments of the App and backend infrastructure</li>
+    </ul>
+    <div class="note note-warn">
+      <strong>⚠️ Data Breach Procedure:</strong> In the event of a data breach likely to result in risk to data subjects, we will notify the <strong>Data Protection Commission of Ghana</strong> within 72 hours and inform affected users as soon as reasonably practicable, in accordance with Act 843.
+    </div>
+  </section>
+
+  <section id="s9">
+    <div class="sh"><span class="sh-num">09</span><h2>Your Rights &amp; Choices</h2></div>
+    <p>Under Ghana's Data Protection Act, 2012 (Act 843), you have the following rights with respect to your personal data:</p>
+    <div class="rights-grid">
+      <div class="right-card"><h4>Right to Access</h4><p>Request confirmation of whether we hold your data and receive a copy.</p></div>
+      <div class="right-card"><h4>Right to Correction</h4><p>Request correction of inaccurate or incomplete personal data.</p></div>
+      <div class="right-card"><h4>Right to Deletion</h4><p>Request deletion of non-statutory personal data where processing is no longer necessary.</p></div>
+      <div class="right-card"><h4>Right to Object</h4><p>Object to processing of your data in certain circumstances.</p></div>
+      <div class="right-card"><h4>Right to Restriction</h4><p>Request restricted processing while a dispute is under investigation.</p></div>
+      <div class="right-card"><h4>Right to Complain</h4><p>Lodge a complaint with the Data Protection Commission of Ghana.</p></div>
+    </div>
+    <p style="margin-top:18px;">To exercise any of these rights, contact the WAEC-GH Data Protection Officer (Section 13). We will respond within <strong>21 days</strong>. Note that examination malpractice records cannot be deleted as they are statutory records.</p>
+    <p><strong>Data Protection Commission of Ghana:</strong> <a href="https://www.dataprotection.org.gh" target="_blank" style="color:var(--accent);">www.dataprotection.org.gh</a></p>
+  </section>
+
+  <section id="s10">
+    <div class="sh"><span class="sh-num">10</span><h2>Children's Privacy</h2></div>
+    <p>WAEC IRIS is designed for use by examination candidates who may be under 18 years of age, as WAEC examinations (including the BECE and WASSCE) are taken by students who may be minors.</p>
+    <ul class="pl">
+      <li>We collect only the minimum data necessary for a minor candidate to check their case status (index number, date of birth, exam year)</li>
+      <li>Minors' case data is never used for advertising, profiling, or any purpose beyond displaying their case status</li>
+      <li>We do not knowingly collect personal data from children under 13 years of age beyond the core examination case-checking function</li>
+      <li>Schools using the App on behalf of minor candidates are responsible for ensuring appropriate parental or guardian consent per their institutional policies</li>
+      <li>We do not subject minor users to behavioral advertising or commercial data monetization of any kind</li>
+    </ul>
+    <div class="note note-info">
+      <strong>ℹ️ Google Play Families Policy:</strong> This App is not directed at children as its primary audience — it is an examination management tool. However, we fully comply with applicable children's data privacy requirements.
+    </div>
+  </section>
+
+  <section id="s11">
+    <div class="sh"><span class="sh-num">11</span><h2>Third-Party Services</h2></div>
+    <p>WAEC IRIS may use the following categories of third-party services, each governed by its own privacy terms:</p>
+    <table class="dt">
+      <thead>
+        <tr><th>Service Type</th><th>Purpose</th><th>Data Shared</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Google Play Services</td><td>App distribution, updates, crash reporting</td><td>App version, crash logs, device info</td></tr>
+        <tr><td>Cloud Hosting / Server Infrastructure</td><td>Backend data storage and API hosting</td><td>Encrypted application and user data (under DPA)</td></tr>
+        <tr><td>Analytics Tools</td><td>Anonymized App usage analysis</td><td>Aggregated, anonymized usage data only</td></tr>
+        <tr><td>Email Service Provider</td><td>Transactional system emails (if applicable)</td><td>School email addresses for auth-related emails only</td></tr>
+      </tbody>
+    </table>
+    <p>All third-party processors are required to handle data in accordance with Act 843 and our data processing agreements. We do not use third-party advertising SDKs, and we do not permit third parties to collect data for their own commercial purposes through this App.</p>
+  </section>
+
+  <section id="s12">
+    <div class="sh"><span class="sh-num">12</span><h2>Changes to This Policy</h2></div>
+    <p>We may update this Privacy Policy periodically to reflect changes in the App's functionality, applicable laws, or our data practices. When material changes are made:</p>
+    <ul class="pl">
+      <li>The "Last Updated" date at the top of this policy will be revised</li>
+      <li>A notice will be displayed within the App informing users of the update</li>
+      <li>Where required by law, we will seek renewed consent before changes take effect</li>
+    </ul>
+    <p>We encourage periodic review of this policy. Continued use of WAEC IRIS after the effective date of any changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section id="s13">
+    <div class="sh"><span class="sh-num">13</span><h2>Contact &amp; Data Controller</h2></div>
+    <p>WAEC-GH is the <strong>Data Controller</strong> for all personal data processed through WAEC IRIS. For questions, requests, or concerns about this policy or your personal data, please contact:</p>
+    <div class="contact-card">
+      <div class="cc-icon">🏛️</div>
+      <div>
+        <h3>West African Examinations Council — Ghana</h3>
+        <p class="cc-sub">Data Protection Officer &nbsp;·&nbsp; WAEC IRIS Privacy Enquiries</p>
+        <p class="cc-line">🌐 App Platform: <a href="https://irreg.waecgh.org" target="_blank">irreg.waecgh.org</a></p>
+        <p class="cc-line">📧 Email: <a href="mailto:privacy@waecgh.org">privacy@waecgh.org</a></p>
+        <p class="cc-line">🌐 Website: <a href="https://www.waecgh.org" target="_blank">www.waecgh.org</a></p>
+        <p class="cc-line">📬 Address: WAEC Ghana, Examination Loop, off Graphic Road, P.O. Box GP 125, Accra, Ghana</p>
+        <p class="cc-line">📞 Phone: +233 (0) 302 221 511</p>
+        <p class="cc-line" style="margin-top:12px; color:rgba(255,255,255,0.4); font-size:12px;">Data Protection Commission of Ghana: <a href="https://www.dataprotection.org.gh" target="_blank">www.dataprotection.org.gh</a></p>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <strong>© 2026 West African Examinations Council, Ghana (WAEC-GH)</strong>. All rights reserved.<br/>
+  WAEC IRIS — Irregularity Reporting &amp; Investigation System &nbsp;·&nbsp; Privacy Policy &nbsp;·&nbsp; Compliant with Ghana Data Protection Act 2012 (Act 843) &amp; Google Play Data Safety Requirements
+</footer>
+
+</body>
+</html>
