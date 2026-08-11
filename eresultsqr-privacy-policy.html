@@ -1,0 +1,336 @@
+<title>WAEC QR Validator — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --surface: #ffffff;
+    --surface-2: #eef0f9;
+    --text: #171a2e;
+    --text-muted: #565b76;
+    --border: #e2e4ef;
+    --accent: #0a0e5e;
+    --accent-gold: #b9860c;
+    --good: #12794f;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b0d1d;
+      --surface: #12142a;
+      --surface-2: #181b36;
+      --text: #ebedf7;
+      --text-muted: #9aa0c0;
+      --border: #262a48;
+      --accent: #9aa3ff;
+      --accent-gold: #e9b627;
+      --good: #4fd699;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #0b0d1d;
+    --surface: #12142a;
+    --surface-2: #181b36;
+    --text: #ebedf7;
+    --text-muted: #9aa0c0;
+    --border: #262a48;
+    --accent: #9aa3ff;
+    --accent-gold: #e9b627;
+    --good: #4fd699;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    padding: 0 20px 96px;
+  }
+
+  .page {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  header {
+    padding-top: 64px;
+    padding-bottom: 28px;
+  }
+
+  .mark {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .mark svg { flex: none; }
+
+  .mark-name {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  h1 {
+    font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600;
+    font-size: 2.35rem;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0 0 10px;
+    text-wrap: balance;
+    color: var(--text);
+  }
+
+  .subhead {
+    color: var(--text-muted);
+    font-size: 1.02rem;
+    margin: 0;
+  }
+
+  .meta-row {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 22px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 12.5px;
+    color: var(--text-muted);
+  }
+
+  .meta-row b {
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--good);
+    border-radius: 10px;
+    padding: 22px 24px;
+    margin: 8px 0 44px;
+  }
+
+  .summary .eyebrow {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--good);
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .summary p {
+    margin: 0;
+    font-size: 1.03rem;
+    color: var(--text);
+  }
+
+  section {
+    margin: 44px 0;
+  }
+
+  h2 {
+    font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: -0.005em;
+    margin: 0 0 14px;
+    color: var(--text);
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  h2 .num {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 0.75rem;
+    color: var(--accent-gold);
+    font-weight: 600;
+  }
+
+  section p {
+    margin: 0 0 14px;
+    max-width: 62ch;
+    color: var(--text);
+  }
+
+  section p:last-child { margin-bottom: 0; }
+
+  section ul {
+    margin: 0 0 14px;
+    padding-left: 1.3em;
+  }
+
+  section li {
+    margin-bottom: 8px;
+    max-width: 60ch;
+  }
+
+  .muted { color: var(--text-muted); }
+
+  .table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    margin-top: 4px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.92rem;
+    min-width: 480px;
+  }
+
+  th {
+    text-align: left;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    background: var(--surface-2);
+    padding: 12px 16px;
+    font-weight: 600;
+  }
+
+  td {
+    padding: 14px 16px;
+    border-top: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  td.pill-cell { white-space: nowrap; }
+
+  .pill {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 999px;
+  }
+
+  .pill.no {
+    background: color-mix(in srgb, var(--good) 16%, transparent);
+    color: var(--good);
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 48px 0;
+  }
+
+  footer {
+    color: var(--text-muted);
+    font-size: 0.92rem;
+  }
+
+  footer a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  }
+
+  footer a:hover { border-bottom-color: var(--accent); }
+
+  footer p { margin: 0 0 10px; }
+</style>
+
+<div class="page">
+  <header>
+    <div class="mark">
+      <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="QR finder mark">
+        <rect width="30" height="30" rx="7" fill="var(--accent)"/>
+        <rect x="7" y="7" width="6" height="6" fill="var(--bg)"/>
+        <rect x="17" y="7" width="6" height="6" fill="var(--bg)"/>
+        <rect x="7" y="17" width="6" height="6" fill="var(--bg)"/>
+        <rect x="17" y="17" width="2" height="2" fill="var(--bg)"/>
+      </svg>
+      <span class="mark-name">WAEC QR Validator</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="subhead">What happens when you scan a result slip — in plain terms.</p>
+    <div class="meta-row">
+      <span>Effective <b>11 August 2026</b></span>
+      <span>Applies to <b>Android app, com.eresultsqrscanner.app</b></span>
+    </div>
+  </header>
+
+  <div class="summary">
+    <span class="eyebrow">In short</span>
+    <p>WAEC QR Validator does not collect, store, or transmit any personal data. The camera is used only to read a QR code on your screen, and the whole verification happens on your device — nothing is ever sent anywhere.</p>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span> What the camera sees</h2>
+    <p>The app asks for camera access for one reason: to point it at the QR code printed on a WAEC result slip and read the code. The camera feed is processed live, in memory, to detect the code — it is never recorded, saved as a photo or video, or sent off your device.</p>
+    <p class="muted">If you decline camera access, the app can't scan a code, but nothing else about it is affected.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span> What happens to the code</h2>
+    <p>Once a QR code is detected, its contents are decrypted using a key built into the app — entirely on your device, with no server involved. The decrypted result details are shown on screen for you to read.</p>
+    <p>If you tap <b>Copy</b>, the decoded text is placed on your device's clipboard. That's the only action that moves this data anywhere, and it only happens when you choose to do it.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span> What we don't do</h2>
+    <ul>
+      <li>No account, sign-in, or personal profile of any kind.</li>
+      <li>No analytics, crash reporting, or usage tracking.</li>
+      <li>No advertising or ad networks.</li>
+      <li>No network requests at all — the app works fully offline.</li>
+      <li>No storage of scanned results after you close the app.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span> Permissions at a glance</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Permission</th>
+            <th>Used for</th>
+            <th>Leaves your device?</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Camera</td>
+            <td>Reading the QR code on a result slip, live</td>
+            <td class="pill-cell"><span class="pill no">Never</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span> Children's privacy</h2>
+    <p>The app isn't directed at children and doesn't knowingly collect information from anyone, of any age — there's simply no data collection to speak of.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span> Changes to this policy</h2>
+    <p>If this policy ever changes, the update will be posted at this same address with a new effective date above. Continued use of the app after a change means you accept the revised policy.</p>
+  </section>
+
+  <hr />
+
+  <footer>
+    <p>Questions about this policy or the app can be sent to:</p>
+    <p><a href="mailto:manyregs@gmail.com">manyregs@gmail.com</a></p>
+  </footer>
+</div>
